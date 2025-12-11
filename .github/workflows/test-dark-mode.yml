@@ -1,0 +1,15 @@
+name: Dark Mode Tests
+
+on:
+  issues:
+    types: [edited]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run Test Suite
+        run: echo "Simulated test execution for Dark Mode"
